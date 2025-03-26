@@ -5,6 +5,5 @@ plotly
 scikit-learn
 tensorflow
 keras
-io
 base64
 pickle
