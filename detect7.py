@@ -657,7 +657,8 @@ with tab4:
                     st.plotly_chart(fig, use_container_width=True)
 
                 if selected_model == 'LSTM':
-                    if 'history' in results:
+                    if isinstance(results, dict) and 'history' in results:
+
                         st.markdown('### LSTM Training History')
 
                         history = results['history']
